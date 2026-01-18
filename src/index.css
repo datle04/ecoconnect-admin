@@ -1,0 +1,21 @@
+/* 1. Xóa margin/padding mặc định của trình duyệt */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5; /* Màu nền xám nhạt chuẩn Admin */
+}
+
+/* 2. Đảm bảo thẻ Root của React chiếm hết chiều cao */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. (Quan trọng) Đảm bảo Layout của Antd không bị co rúm */
+.ant-layout {
+  min-height: 100vh; /* Bắt buộc */
+}
